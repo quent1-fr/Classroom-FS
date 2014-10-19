@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #edf0f1;
+    font-family: 'Open sans';
+}
+
+header{
+    background: #fff;
+    height: 120px;
+    box-shadow: 0 0 3px #aaa;
+    line-height: 110px;
+    margin-bottom: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.conteneur{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #3686be;
+    width: 220px;
+    float: left;
+    height: 120px;
+}
+
+nav{
+    width: 700px;
+    float: right;
+    height: 120px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    color: #3686be;
+    text-decoration: none;
+    margin: 0 4px;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover, nav ul li a.actif{
+    background: #3686be;
+    color: #fff;
+    border-radius: 4px;
+    border-bottom: 2px solid #2c6f9e
+}
+
+article{
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+article h1{
+    color: #989a9b;
+    font-weight: normal;
+    font-size: 23px;
+    border-bottom: 1px solid #d1d4d5;
+    padding-bottom: 15px;
+}
+
+article h1 a, article h2 a, article p a{
+    color: #3686be;
+    text-decoration: none;
+}
+
+article h2{
+    margin-top: 30px;
+    color: #3686be;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+article p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 10px;
+    color: #444;
+}
+
+.liste_fichiers{
+    margin-bottom: 30px;
+}
+ 
+.liste_fichiers p{
+    margin: 0 10px;
+    color: #989a9b;
+    font-style: italic; 
+}
+
+.zone_upload{
+    width: 950px;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 5px 5px 15px 5px;
+    text-align: center;
+    color: #aaa;
+}
+
+.zone_upload:hover{
+    background: #39a46c url('../icones/chargement.png') no-repeat 5px -20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.fichier{
+    background: #fff;
+    width: 290px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+}
+
+.fichier:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px #ccc;
+    cursor: pointer;
+}
+
+.fichier:hover .supprimer{
+    display: block;
+}
+
+.fichier .supprimer{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    display: none;
+}
+
+.fichier .supprimer a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.fichier .supprimer a:hover{
+    color: #e34747;
+}
+
+.fichier img{
+    height: 51px;
+    width: 51px;
+}
+
+.infos_fichier{
+    height: 50px;
+    float: right;
+    width: 225px;
+}
+
+.infos_fichier h1{
+    font-size: 13px;
+    font-weight: bold;
+    color: #4d6c7e;
+    padding: 5px 0 0 0;
+    margin: 0;
+    border-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.infos_fichier h2{
+    font-size: 12px;
+    font-weight: normal;
+    color: #809dae;
+    padding: 3px 0 0 0;
+    margin: 0;
+}
+
+.dz-preview{
+    display: none;
+}

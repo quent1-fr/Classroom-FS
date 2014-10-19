@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #edf0f1 url('../icones/favicon.png') no-repeat center 100px;
+    font-family: 'Open sans';
+}
+
+form{
+    width: 300px;
+    padding: 40px;
+    margin: 220px auto;
+    border-radius: 5px;
+}
+
+label{
+    border: 0;
+    background: #e5eaea;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 12px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    color: #777;
+}
+
+input[type="password"]{
+    border: 0;
+    background: #d7dedf;
+    width: 300px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+input[type="password"]:focus{
+    background: #fff;
+}
+
+input[type="submit"]{
+    border: 0;
+    background: #77b3d4;
+    width: 325px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
