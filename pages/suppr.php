@@ -3,8 +3,8 @@
     // Pas besoin de thème ici
     $pas_de_header = true;
     
-    // On simplifie l'écriture de la variable $_GET['fichier'], en sécurisant le nom (on supprime les « .. » et « / »)
-    $fichier = './donnees/' . str_replace(array('..', '/'), '', $_GET['fichier']);
+    // On simplifie l'écriture de la variable $_GET['fichier'], en sécurisant le nom (on supprime les « .. »)
+    $fichier = './donnees/' . str_replace('..', '', $_GET['fichier']);
         
     // On vérifie que le fichier existe
     if(file_exists($fichier)){

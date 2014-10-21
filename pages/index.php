@@ -93,7 +93,7 @@
 				$date_creation = filectime($dossier_classe . $contenu_dossier);
 				
 				// Et on le stocke dans le tableau
-				$liste_fichiers[filectime($dossier_classe . $contenu_dossier)] = '<a href="?p=telecharger&fichier=' . $sous_dossier . urlencode($contenu_dossier) . '" title="' . $contenu_dossier . '"><div class="fichier"><img src="theme/icones/' . icone_fichier($contenu_dossier) . '.png" /><div class="infos_fichier"><h1>' . $contenu_dossier . '</h1><h2>Envoyé le ' . strftime('%d %B %Y à %H:%M', $date_creation) . '</h2></div><div class="supprimer"><a href="?p=supprimer&fichier=' . $sous_dossier . urlencode($contenu_dossier) . '">X</a></div></div></a>';
+				$liste_fichiers[filectime($dossier_classe . $contenu_dossier)] = '<a href="?p=telecharger&fichier=' . $sous_dossier . urlencode($contenu_dossier) . '" title="' . $contenu_dossier . '"><div class="fichier"><img src="theme/icones/' . icone_fichier($contenu_dossier) . '.png" /><div class="infos_fichier"><h1>' . $contenu_dossier . '</h1><h2>Envoyé le ' . strftime('%d %B %Y à %H:%M', $date_creation) . '</h2></div><div class="supprimer"><a href="?p=suppr&fichier=' . $sous_dossier . urlencode($contenu_dossier) . '">X</a></div></div></a>';
 			}
 			// Si c'est un dossier
 			else
