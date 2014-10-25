@@ -1,3 +1,9 @@
 Classroom-FS
 =============
 Partage de fichiers collaboratif entre élèves.
+
+Configuration
+-------------
+Pour configurer le mot de passe de la classe, éditez le fichier config.php.
+Vérifiez que le serveur web a bien les droits en écriture dans le dossier "donnees" où sont stockés les fichiers.
+Pour ajouter des matières, il suffit de créer un nouveau dossier avec le nom de la matière à l'intérieur du dossier "donnees"
